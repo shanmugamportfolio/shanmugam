@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        /* CSS Styles */
+
+        /* Body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #30c1fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #4d3569;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .image_profile{
+            border-radius: 50%;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background-color: #463894;
+            padding: 10px;
+        }
+
+        nav li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Sections */
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #1f2b5f;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="image_profile" src="shanmugams.jpg" alt="writh" style="height: 170px; width: 361px;">
+        <h1>Shanmugam.S</h1>
+        <p>Web Developer</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li> <!-- Added a Resume link -->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am Shanmugam.S, currently pursuing my IIIrd year of B.Sc in Computer Science. I have a strong passion for creating and developing web pages, and I'm proficient in programming languages such as C#, ASP.Net, PHP, HTML with CSS, and MYSQL.<br>
+            <br>
+            <br>
+            <b>  Name:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Shanmugam.S<br>
+            <b> Date of Birth:</b>&nbsp;&nbsp;23/11/2004<br>
+            <b>  Email:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;shanmugamsjns2004@gmail.com<br>
+            <b> Phone:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6382813129<br>
+        <b>Location:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thanthonimalai</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="project1.jpg">Project 1</a></li>
+            <!-- Add more project lines here -->
+            </ul>
+        <!-- List your projects here -->
+    </section>
+    <section id="resume"> <!-- Added a Resume section -->
+        <h2>Resume</h2>
+        <p>Your resume content here.</p>
+        <div class="button">
+            <button>  <p><a href="shanmugamresume.jpg">Download CV</a></p></button>
+          </div>
+    </section>
+    <div class="container" id="contact-container">
+        <section class="contact" id="contact">
+            <div class="content">
+              <div class="title"><span><b>Contact Me</b></span></div>
+              <div class="text">
+                  
+                <div class="topic">Enter Your Name:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"></div>
+                <div class="topic">Enter Your Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email"></div>
+                <div class="topic"> Enter Your Message:<br>  <textarea id="message" placeholder=" " style="height: 170px; width: 361px;"></textarea>
+                </div>
+                          <div class="button">
+                  <button>Submit</button>
+                </div>
+              </div>
+            </div>
+          </section>
+    <footer>
+        <p>&copy; 2023 copy writh</p>
+    </footer>
+    <script>
+        // JavaScript code
+
+        // Example: Display a pop-up when clicking on a project
+        const projectCards = document.querySelectorAll('.project-card');
+
+        projectCards.forEach(card => {
+            card.addEventListener('click', () => {
+                alert('You clicked on a project!');
+            });
+        });
+    </script>
+</body>
